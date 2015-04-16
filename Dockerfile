@@ -4,14 +4,11 @@
 # Docker Hub - http://hub.docker.com/u/dalekurt/docker-storm
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM stackbrew/ubuntu:14:04
+FROM dalekurt/base
 
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
 ENV STORM_VERSION 0.9.4
-
-# Basic environment setup
-RUN apt-get update && apt-get install -y wget openjdk-7-jre-headless supervisor
 
 # Download and install Apache Storm
 RUN wget -q -O - http://mirrors.sonic.net/apache/storm/apache-storm-${STORM_VERSION}/apache-storm-${STORM_VERSION}.tar.gz | tar -xzf - -C /opt
