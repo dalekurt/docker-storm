@@ -1,7 +1,7 @@
 # Apache Storm for Ubuntu 14.04
 #
 # GitHub - http://github.com/dalekurt/docker-storm
-# Docker Hub - http://hub.docker.com/u/dalekurt/docker-storm
+# Docker Hub - http://hub.docker.com/u/dalekurt/storm
 # Twitter - http://www.twitter.com/dalekurt
 
 FROM dalekurt/base
